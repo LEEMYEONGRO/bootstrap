@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <style type="text/css">
+  table th{
+  font-size: 12px;
+  }
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  	<body>
+		<nav class="navbar bg-body-tertiary">
+  			<div class="container-fluid">
+   				<a class="navbar-brand" href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html">
+      				<img src="./img/a1.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+      				Admin
+    			</a>
+    		<ul class="nav justify-content-end">
+    		<!-- 밑에 이미지 3개 넣은거는 나중에 기능 추가해서 수정할 사항 지금은 모양잡기위해 임시로 넣은것.-->
+  				<li class="nav-item">
+    				<a class="navbar-brand" href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html">
+      					<img src="./img/a2.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+    				</a>
+  				</li>
+ 				<li class="nav-item">
+    				<li class="nav-item">
+    				<a class="navbar-brand" href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html">
+      					<img src="./img/a3.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+    				</a>
+  				</li>
+  				<li class="nav-item">
+    				<a class="navbar-brand" href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html">
+      					<img src="./img/a4.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+    				</a>
+  				</li>
+			</ul>
+  			</div>
+		</nav>
+
+    			<div class="col-2">
+    				<ul>
+  						<li>
+  							<button class="btn">Home</button>
+  						</li>
+  						<li>
+  							<button class="btn">공지사항</button>
+  						</li>
+  						<li>
+  							<a class="btn" data-bs-toggle="collapse" href="#membermanagement" role="button" aria-expanded="false">
+    							회원관리
+  							</a>
+  							<div class="collapse" id="membermanagement">
+  								<div>
+									김영일
+  								</div>
+  								<div>
+									김영이
+  								</div>
+  								<div>
+									김영삼
+  								</div>
+							</div>
+  						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#sponsor" role="button" aria-expanded="false">
+    							스폰서
+  							</a>
+  							<div class="collapse" id="sponsor">
+  								<div>
+									스폰서1
+  								</div>
+  								<div>
+									스폰서2
+  								</div>
+  								<div>
+									스폰서3
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#advertisement" role="button" aria-expanded="false">
+    							광고관리
+  							</a>
+  							<div class="collapse" id="advertisement">
+  								<div>
+									광고1
+  								</div>
+  								<div>
+									광고2
+  								</div>
+  								<div>
+									광고3
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#service" role="button" aria-expanded="false">
+    							서비스관리
+  							</a>
+  							<div class="collapse" id="service">
+  								<div>
+									서비스1
+  								</div>
+  								<div>
+									서비스2
+  								</div>
+  								<div>
+									서비스3
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#communication" role="button" aria-expanded="false">
+    							커뮤니케이션
+  							</a>
+  							<div class="collapse" id="communication">
+  								<div>
+									부장
+  								</div>
+  								<div>
+									대리
+  								</div>
+  								<div>
+									사원1
+  								</div>
+  								<div>
+									사원2
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#setting" role="button" aria-expanded="false">
+    							설정
+  							</a>
+  							<div class="collapse" id="setting">
+  								<div>
+									설정1
+  								</div>
+  								<div>
+									설정2
+  								</div>
+  								<div>
+									설정3
+  								</div>
+  								<div>
+									설정4
+  								</div>
+							</div>
+						</li>
+						<li>
+							<button class="btn">개인정보관리</button>
+						</li>
+						<li>
+							<button class="btn">test</button>
+						</li>
+						<li>
+							<button class="btn">gps</button>
+						</li>
+					</ul>
+    			</div>
+    				<div class="col-10">
+    				
+    			<div class="col-2">
+    				<hr>
+    				<button type="button" class="btn">
+    					<img src="./img/a5.png" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+    				Collapsed View
+    				</button>
+    			</div>
+    			<div class="col-10">
+    				<nav aria-label="Page navigation example">
+  						<ul class="pagination justify-content-center">
+   							<li class="page-item">
+   							 	<a class="page-link" href="#" aria-label="Previous">
+        							<span aria-hidden="true">&laquo;</span>
+      							</a>
+    						</li>
+   							<li class="page-item"><a class="page-link" href="#">1</a></li>
+    						<li class="page-item"><a class="page-link" href="#">2</a></li>
+    						<li class="page-item"><a class="page-link" href="#">3</a></li>
+    						<li class="page-item">
+      							<a class="page-link" href="#" aria-label="Next">
+        							<span aria-hidden="true">&raquo;</span>
+      							</a>
+    						</li>
+  						</ul>
+					</nav>
+					<div class="row">
+						<div class="col-6">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<img src="./img/x-circle-fill.svg" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+						</button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  							<div class="modal-dialog">
+    							<div class="modal-content">
+      								<div class="modal-header">
+        								<h1 class="modal-title fs-5" id="exampleModalLabel">선택하신 항목을 삭제하겠습니까?</h1>
+        								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      								</div>
+      								<div class="modal-body">
+        								삭제한 내용은 복구되지 않습니다.
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-primary">삭제</button>
+        								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
+						</div>
+					<div class="col-6">	
+					<div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+    					<button type="button" class="btn">
+    							<img src="./img/plus-lg.svg" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+    					</button>
+    				</div>
+    			</div>
+    			</div>
+    			</div>
+  			</div>
+		</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

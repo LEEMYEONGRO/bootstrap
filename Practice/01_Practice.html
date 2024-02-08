@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <style type="text/css">
+  table th{
+  font-size: 12px;
+  }
+  </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
@@ -26,7 +31,6 @@
       					<img src="./img/a3.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
     				</a>
   				</li>
-  				</li>
   				<li class="nav-item">
     				<a class="navbar-brand" href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html">
       					<img src="./img/a4.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
@@ -36,29 +40,519 @@
   			</div>
 		</nav>
     	<div class="container-fluid">
-  			<div class="row row-cols-2">
+  			<div class="row">
     			<div class="col-2">
     				<ul>
-  						<li>Home</li>
-  						<li>회원관리</li>
-						<li>스폰서관리</li>
-						<li>광고관리</li>
-						<li>서비스관리</li>
-						<li>커뮤니케이션</li>
-						<li>시스템관리</li>
-						<li>개인정보관리</li>
-						<li>test</li>
-						<li>gps</li>
+  						<li>
+  							<button class="btn">Home</button>
+  						</li>
+  						<li>
+  							<button class="btn">공지사항</button>
+  						</li>
+  						<li>
+  							<a class="btn" data-bs-toggle="collapse" href="#membermanagement" role="button" aria-expanded="false">
+    							회원관리
+  							</a>
+  							<div class="collapse" id="membermanagement">
+  								<div>
+									김영일
+  								</div>
+  								<div>
+									김영이
+  								</div>
+  								<div>
+									김영삼
+  								</div>
+							</div>
+  						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#sponsor" role="button" aria-expanded="false">
+    							스폰서
+  							</a>
+  							<div class="collapse" id="sponsor">
+  								<div>
+									스폰서1
+  								</div>
+  								<div>
+									스폰서2
+  								</div>
+  								<div>
+									스폰서3
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#advertisement" role="button" aria-expanded="false">
+    							광고관리
+  							</a>
+  							<div class="collapse" id="advertisement">
+  								<div>
+									광고1
+  								</div>
+  								<div>
+									광고2
+  								</div>
+  								<div>
+									광고3
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#service" role="button" aria-expanded="false">
+    							서비스관리
+  							</a>
+  							<div class="collapse" id="service">
+  								<div>
+									서비스1
+  								</div>
+  								<div>
+									서비스2
+  								</div>
+  								<div>
+									서비스3
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#communication" role="button" aria-expanded="false">
+    							커뮤니케이션
+  							</a>
+  							<div class="collapse" id="communication">
+  								<div>
+									부장
+  								</div>
+  								<div>
+									대리
+  								</div>
+  								<div>
+									사원1
+  								</div>
+  								<div>
+									사원2
+  								</div>
+							</div>
+						</li>
+						<li>
+							<a class="btn" data-bs-toggle="collapse" href="#setting" role="button" aria-expanded="false">
+    							설정
+  							</a>
+  							<div class="collapse" id="setting">
+  								<div>
+									설정1
+  								</div>
+  								<div>
+									설정2
+  								</div>
+  								<div>
+									설정3
+  								</div>
+  								<div>
+									설정4
+  								</div>
+							</div>
+						</li>
+						<li>
+							<button class="btn">개인정보관리</button>
+						</li>
+						<li>
+							<button class="btn">test</button>
+						</li>
+						<li>
+							<button class="btn">gps</button>
+						</li>
 					</ul>
     			</div>
-    			<div class="col-10">
-    			
-    			
+    				<div class="col-10">
+    				<a href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html#">Page 1</a>
+    				<img src="./img/a6.svg" alt="Logo" width="20" height="20" class="d-inline-block align-text-top">
+    				<a href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html#">Page 2</a>
+    				<img src="./img/a6.svg" alt="Logo" width="20" height="20" class="d-inline-block align-text-top">
+    				<a href="file:///D:/factory/workspace/sts4_4210/bootstrap/Practice/01_Practice.html#">회원관리</a>
+    				<h1> Member</h1>
+    				<div class="row mt-3">
+    					<div class="col-2">
+    						<select class="form-select" aria-label="Default select example">
+  								<option selected>N</option>
+  								<option value="1">Y</option>
+							</select>
+    					</div>
+    					<div class="col-2">
+    						<select class="form-select" aria-label="Default select example">
+  								<option selected>수정일</option>
+							</select>
+    					</div>
+    					<div class="col-2">
+    						<input type="date">
+    					</div>
+    					<div class="col-2">
+    						<input type="date">
+    					</div> 				
+					</div>
+					<div class="row mt-5">
+						<div class="col-2">
+    						<select class="form-select" aria-label="Default select example">
+  								<option selected>검색구분</option>
+							</select>
+    					</div>
+    					<div class="col-2">
+    						<input type="text">
+    						<button type="button" class="btn">
+    						<img src="./img/a7.svg" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+    						</button>
+    						<button type="button" class="btn">
+    						<img src="./img/a8.svg" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+    						</button>
+    					</div>
+						</div>
+    				<table class="table text-center">
+						<thead>
+								<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>									
+									<th scope="col">#</th>
+									<th scope="col">탈퇴</th>
+     								<th scope="col">코드</th>
+      								<th scope="col">이름</th>
+      								<th scope="col">아이디</th>
+      								<th scope="col">성별</th>
+      								<th scope="col">생일</th>
+      								<th scope="col">이메일</th>
+      								<th scope="col">모바일</th>
+      								<th scope="col">예금주</th>
+      								<th scope="col">은행</th>
+      								<th scope="col">계좌번호</th>
+      								<th scope="col">차량명</th>
+      								<th scope="col">차량번호</th>
+      								<th scope="col">차량타입</th>
+      								<th scope="col">차량년도</th>
+      								<th scope="col">차량컬러</th>
+      								<th scope="col">차량등록지</th>
+      								<th scope="col">등록일</th>
+      								<th scope="col">수정일</th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">1</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0001</th>
+    								<th scope="col">김영일</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">2</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0002</th>
+    								<th scope="col">김영이</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">3</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0003</th>
+    								<th scope="col">김영삼</th>
+    								<th scope="col">kim03@naver.com</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">4</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0004</th>
+    								<th scope="col">김영사</th>
+    								<th scope="col">kim04@naver.com</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">5</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0005</th>
+    								<th scope="col">김영오</th>
+    								<th scope="col">kim05@naver.com</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">6</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0006</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">7</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0007</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">8</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0008</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">9</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0009</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+    							<tr>
+      								<th scope="col">
+      									<div class="form-check">
+  											<input class="form-check-input" type="checkbox">
+										</div>
+      								</th>
+    								<th scope="col">10</th>
+    								<th scope="col">N</th>
+    								<th scope="col">0010</th>
+    								<th scope="col">김십</th>
+    								<th scope="col">kim10@naver.com</th>
+    								<th scope="col">남성</th>
+    								<th scope="col">1972/05/19</th>
+    								<th scope="col">kim10@naver.com</th>
+    								<th scope="col">01037456840</th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    								<th scope="col"></th>
+    							</tr>
+						</thead>
+    				</table>
     			</div>
-    			<div class="col"></div>
-    			<div class="col"></div>
-    			<div class="col"></div>
-    			<div class="col"></div>
+    			<div class="col-2">
+    				<hr>
+    				<button type="button" class="btn">
+    					<img src="./img/a5.png" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+    				Collapsed View
+    				</button>
+    			</div>
+    			<div class="col-10">
+    				<nav aria-label="Page navigation example">
+  						<ul class="pagination justify-content-center">
+   							<li class="page-item">
+   							 	<a class="page-link" href="#" aria-label="Previous">
+        							<span aria-hidden="true">&laquo;</span>
+      							</a>
+    						</li>
+   							<li class="page-item"><a class="page-link" href="#">1</a></li>
+    						<li class="page-item"><a class="page-link" href="#">2</a></li>
+    						<li class="page-item"><a class="page-link" href="#">3</a></li>
+    						<li class="page-item">
+      							<a class="page-link" href="#" aria-label="Next">
+        							<span aria-hidden="true">&raquo;</span>
+      							</a>
+    						</li>
+  						</ul>
+					</nav>
+					<div class="row">
+						<div class="col-6">
+						<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<img src="./img/x-circle-fill.svg" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+						</button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  							<div class="modal-dialog">
+    							<div class="modal-content">
+      								<div class="modal-header">
+        								<h1 class="modal-title fs-5" id="exampleModalLabel">선택하신 항목을 삭제하겠습니까?</h1>
+        								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      								</div>
+      								<div class="modal-body">
+        								삭제한 내용은 복구되지 않습니다.
+      								</div>
+      								<div class="modal-footer">
+        								<button type="button" class="btn btn-primary">삭제</button>
+        								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+      								</div>
+    							</div>
+  							</div>
+						</div>
+						</div>
+					<div class="col-6">	
+					<div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+    					<button type="button" class="btn">
+    							<img src="./img/plus-lg.svg" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+    					</button>
+    				</div>
+    			</div>
+    			</div>
+    			</div>
   			</div>
 		</div>
     
